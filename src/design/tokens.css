@@ -1,0 +1,85 @@
+/*
+ * Let'sGo design tokens — sampled from the approved UI boards
+ * (LetsGo_Approved_UI_Designs_2026-09-24). Values are approximations of raster
+ * mockups; refine when final tokens are issued. No dark theme is designed yet,
+ * so the scheme is locked to light.
+ */
+:root {
+  color-scheme: light;
+
+  /* Brand & action */
+  --lg-color-primary: #5ae5c4; /* Show N results, toggles */
+  --lg-color-primary-strong: #45dab5;
+  --lg-color-primary-soft: #a2f2d9; /* selected chip */
+  --lg-color-brand: #017374; /* FAB, accents */
+  --lg-color-price: #0c7f7f;
+  --lg-color-on-primary: #0b1414;
+
+  /* Surfaces & text */
+  --lg-color-bg: #eef4f4;
+  --lg-color-surface: #ffffff;
+  --lg-color-border: #dbe3e3;
+  --lg-color-text: #101615; /* neutral near-black, no blue tint */
+  --lg-color-text-muted: #6b7378;
+  --lg-color-disabled-bg: #e4e7e8;
+  --lg-color-disabled-text: #9aa0a4;
+
+  /* Invitation frame */
+  --lg-color-invite-border: #67c3bd;
+  --lg-color-invite-bg: #e6f7f4;
+
+  /* Pitch status */
+  --lg-color-pitch-booked-bg: #e1f1ee;
+  --lg-color-pitch-booked-text: #0c6a63;
+  --lg-color-booking-pending-bg: #fdefe7;
+  --lg-color-booking-pending-text: #8a3b12;
+  --lg-color-community-bg: #ebebf6;
+  --lg-color-community-text: #2f2f4f;
+
+  /* Feedback (red only for a concrete error; amber for "helpful change") */
+  --lg-color-error: #c0392b;
+  --lg-color-amber: #d99a1e;
+
+  /* Type (font family is unresolved in the docs; system stack for now) */
+  --lg-font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --lg-text-xs: 0.75rem;
+  --lg-text-sm: 0.875rem;
+  --lg-text-md: 1rem;
+  --lg-text-lg: 1.25rem;
+  --lg-text-xl: 1.5rem;
+
+  /* Spacing & radii */
+  --lg-space-1: 4px;
+  --lg-space-2: 8px;
+  --lg-space-3: 12px;
+  --lg-space-4: 16px;
+  --lg-space-6: 24px;
+  --lg-radius-chip: 12px;
+  --lg-radius-card: 16px;
+  --lg-radius-pill: 999px;
+
+  /* Minimum touch target (Android 48 dp; iOS 44 pt) */
+  --lg-touch-min: 48px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--lg-color-bg);
+  color: var(--lg-color-text);
+  font-family: var(--lg-font-sans);
+  font-size: var(--lg-text-md);
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
