@@ -1,5 +1,9 @@
 # lets_go_front
 
+Standalone web client repository. Related projects: [backend](https://github.com/leonid-belousov/letsgo-backend) and [mobile](https://github.com/leonid-belousov/letsgo-mobile).
+
+Shared product documents are included in [docs/project](docs/project). Historical documents retain paths from the original combined workspace; `lets_go_front/` denotes this repository root.
+
 ## 1. Purpose
 
 Let'sGo web client. Consumes `lets_go_back` only; the backend decides what the user may do. (The docs do not mandate a web product — this is a technical foundation.)
